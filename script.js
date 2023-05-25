@@ -25,7 +25,7 @@ function addRow(value, tag) {
   }
   rowId.push(elid);
   el.id = elid;
-  el.innerHTML = `<td><input type="text" value="${value}" onmouseover="this.select()" style="width:-webkit-fill-available;font-family:'Nova Mono';"></td><td><button onclick="remove('${elid}');" style="font-family: 'Slackside One';">×</button></td>`;
+  el.innerHTML = `<td><input type="text" value="${value}" onmouseover="this.select()" style="width:-webkit-fill-available;font-family:'Nova Mono', monospace;"></td><td><button onclick="remove('${elid}');" style="font-family: 'Noto Sans JP', sans-serif;">×</button></td>`;
   document.querySelector("table#" + tag).appendChild(el);
 }
 function remove(id) {
